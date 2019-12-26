@@ -6,5 +6,7 @@ const ProductsOverviewScreen = (props) => {
 	const products = useSelector((state) => state.products.availableProducts);
 	return <FlatList data={products} renderItem={(itemData) => <Text> {itemData.item.title} </Text>} />;
 };
-
+ProductsOverviewScreen.navigationOptions = {
+	headerTitle: 'All fucking Products'
+};
 export default ProductsOverviewScreen;
