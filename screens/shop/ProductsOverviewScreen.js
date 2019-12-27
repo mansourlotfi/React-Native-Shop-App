@@ -13,7 +13,9 @@ const ProductsOverviewScreen = (props) => {
 					image={itemData.item.imageUrl}
 					title={itemData.item.title}
 					price={itemData.item.price}
-					onViewDetaile={() => {}}
+					onViewDetaile={() => {
+						props.navigation.navigate('ProductDetail', { productId: itemData.item.id });
+					}}
 					onAddToCart={() => {}}
 				/>
 			)}
