@@ -52,7 +52,6 @@ const styles = StyleSheet.create({
 		backgroundColor: 'white'
 	},
 	summaryText: {
-		fontFamily: 'open-sans-bold',
 		fontSize: 18
 	},
 	amount: {
